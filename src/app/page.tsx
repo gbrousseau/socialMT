@@ -15,7 +15,7 @@ export default function Home() {
   const [isAddCompetitorModalOpen, setIsAddCompetitorModalOpen] = useState(false);
 
   return (
-    <main className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-50 dark:bg-gray-900 min-h-screen text-black dark:text-white">
       <Header 
         onAddAccount={() => setIsAddAccountModalOpen(true)}
         onAddCompetitor={() => setIsAddCompetitorModalOpen(true)}

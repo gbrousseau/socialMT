@@ -24,3 +24,84 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.platform-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.platform-twitter {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.platform-instagram {
+  background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color: white;
+}
+
+.platform-linkedin {
+  background-color: #0077b5;
+  color: white;
+}
+
+.platform-youtube {
+  background-color: #ff0000;
+  color: white;
+}
+
+.chart-container {
+  height: 300px;
+  position: relative;
+}
+
+.comparison-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.badge-better {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-worse {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-neutral {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
